@@ -1,0 +1,15 @@
+type Category {
+    id: ID!
+    code: String!
+    name: String!
+}
+
+# Root
+type Query {
+    findAllCategories: [Category]
+}
+
+# Root
+type Mutation {
+    createCategory(code: String, name: String): Category
+}
