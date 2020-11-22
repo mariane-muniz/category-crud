@@ -15,7 +15,7 @@ tkn task start deploy --showlog \
 
 tkn pipeline start build-deploy --showlog \
   --prefix-name category-crud \
-  -p image=docker.io/marianemuniz/category-crud:latest \
+  -p image=docker.io/marianemuniz/category-crud \
   -p CONTEXT=. \
   -p repo-url=https://github.com/mariane-muniz/category-crud \
   -s pipeline
